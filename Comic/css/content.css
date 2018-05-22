@@ -1,87 +1,55 @@
-$news-card-label-background: $primary-color;
-$news-card-label-background-hover: scale-color($news-card-label-background, $lightness: -15%);
 
-.news-card-tag {
-  margin-bottom: 0.5rem;
-
-  .label {
-    border-radius: 0.125rem;
-    background-color: $news-card-label-background;
-    color: $white;
-
-    a {
-      background-color: inherit;
-      color: inherit;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: $news-card-label-background-hover;
-
-      a {
-        background-color: inherit;
-        color: inherit;
-      }
-    }
-  }
+.product-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-.news-card {
-  background-color: $white;
-  font-weight: 400;
-  margin-bottom: 1.6rem;
-  border-radius: 0.125rem;
-  box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
 
-  .card-section {
-    background-color: inherit;
+.product-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
 
-    .news-card-date {
-      font-size: 1em;
-      color: $dark-gray;
-    }
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+}
 
-    .news-card-article {
-      background-color: inherit;
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
 
-      .news-card-title {
-        line-height: 1.3;
-        font-weight: bold;
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
 
-        a {
-          text-decoration: none;
-          color: $dark-gray;
-          transition: color 0.5s ease;
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
 
-          &:hover {
-            color: $primary-color;
-          }
-        }
-      }
-
-      .news-card-description {
-        color: $dark-gray;
-      }
-    }
-
-    .news-card-author {
-      overflow: hidden;
-      padding-bottom: 1.6rem;
-
-      .news-card-author-image {
-        display: inline-block;
-        vertical-align: middle;
-
-        img {
-          border-radius: 50%;
-          margin-right: 0.6em;
-        }
-      }
-
-      .news-card-author-name {
-        display: inline-block;
-        vertical-align: middle;
-      }
-    }
-  }
+.product-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 10px;
 }
